@@ -368,6 +368,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background: url("../img/hero-bg.jpg") top right;
   background-size: cover;
+  padding-bottom: 0px !important;
 }
 #hero .container {
   padding-top: 70px;
@@ -394,6 +395,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent !important;
   color: #34b7a7 !important;
   border: 2px solid #34b7a7;
+  margin-top: 20px !important;
+  transition: all ease-in-out 0.3s;
+}
+#btn-portfolio:hover{
+  background-color: #34b7a7 !important;
+  color: white !important;
 }
 #hero .btn-about {
   font-family: "Raleway", sans-serif;
@@ -410,7 +417,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #34b7a7;
 }
 #hero .btn-about:hover {
-  background: #3dc8b7;
+  background: #000000;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -443,6 +450,14 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 60px 0;
   
+}
+#about{
+  padding-bottom: 40px !important;
+}
+@media screen and (max-width:1000px) {
+  #about{
+    padding-bottom: 40px !important;
+  }
 }
 
 .section-bg {
@@ -926,13 +941,16 @@ section {
 .portfolio .portfolio-wrap:hover::before {
   opacity: 1;
 }
-.portfolio .portfolio-wrap:hover img {
-  transform: scale(1.2);
-}
+/* .portfolio .portfolio-wrap:hover img {
+  transform: scale(1.1);
+} */
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
-
+.portfolio_img{
+  width: 100%;
+  max-width: none !important;
+}
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
